@@ -1,0 +1,141 @@
+ul{
+	z-index: 2;
+	list-style:none;
+	/*display: none;*/
+}
+ul ul{
+	padding: 0;
+}
+
+ul ul li a{
+	font-size: 16px;
+	display: block;
+	min-width: 200px;
+	max-width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #62C0E9;
+	margin-bottom: 6px;
+	box-shadow: 2px 3px 2px;
+	text-align: center;
+	height: 20px;
+	line-height: 18px;
+}
+
+a{
+	text-decoration:none;
+	color: white;
+	
+}
+body{
+	max-width: 1900px;
+	min-height: 850px;
+	margin:0;
+	font-family: arial;
+}
+.menu-desk{
+		display: none;
+}
+.menu-mobile{
+	display: inline-block;
+}
+.menu-mobile .fa{
+	font-size: 45px;
+}
+
+
+@media screen and (min-width:64rem){
+	.menu-desk{
+		display: inline-block;
+	}
+	.menu-mobile{
+		display: none;
+	}
+
+	.header{
+		position:relative;
+		width: 300px;
+	}
+	.header .biais{
+		z-index: 1;
+		height: 10000px;
+	   left:-1462px;
+	    position: fixed;
+	    top: -150px;
+	    transform: rotate(10deg);
+	    transition: all 0.9s ease-in-out 0s;
+	    width: 600px;
+		background-color: #62C0E9;
+		animation-name: decalage;	
+	    animation-duration: 2s;
+	    animation-fill-mode: forwards;
+
+	    
+	}
+	.wrapper{
+		padding: 30px 24px 0 80px;
+	    position: relative;
+	    z-index: 2;
+	}
+	.wrapper .nav{
+		position: fixed;
+		top:240px;
+		width: 145px;
+		font: 20px;
+	    text-transform: lowercase;
+	    transform: rotate(10deg);
+	    padding: 0;
+	     animation-name: apparition;
+	    animation-delay: 2s;
+	    animation-duration:2s;
+	    animation-fill-mode: forwards;
+	    opacity: 0;
+	 
+	}
+	li{
+
+	background-color: 	#AADFF6;
+}
+
+	.nav li{
+		margin-bottom: 20px;
+		text-align: center;
+		box-shadow: 0px 4px 5px grey;
+	}
+	.nav  a{
+		color:black;
+		font-size: 20px;
+	}
+	.wrapper .identite{
+		position: fixed;
+		animation-name: apparition;
+	    animation-delay: 2s;
+	    animation-duration:2s;
+	    animation-fill-mode: forwards;
+	    opacity: 0;
+	}
+	.content{
+		margin-left: 450px;
+		margin-top: 30px;
+	}
+	@keyframes decalage{
+		0%{
+			left:-1462px;
+		}
+		100%{
+			left:-1162px;
+			
+		}
+		
+	}
+	@keyframes apparition{
+		0%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+
+		}
+
+	}
+}
