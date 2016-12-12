@@ -2,8 +2,16 @@
 	<div class="header">
 		<div class="wrapper">
 			<div class="identite">
-			Sylvain Iseppi <br />
-			Developpeur full stack
+				<div class="photo column small-12 medium-4 desk-12">
+					<img src="images/photo.jpg" alt="photo de moi"/>
+					<div class="nomphoto">
+						Sylvain Iseppi
+					</div>
+					<div class="jobphoto">
+						Developpeur Full Stack
+					</div>
+				</div>
+
 			</div>
 			<ul class="nav" id="nav">
 				<li><a href="monccv.html">non assigné</a></li>

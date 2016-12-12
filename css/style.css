@@ -113,11 +113,37 @@ body{
 	    animation-duration:2s;
 	    animation-fill-mode: forwards;
 	    opacity: 0;
+	    
 	}
 	.content{
 		margin-left: 450px;
 		margin-top: 30px;
 	}
+	.photo{
+		width: 180px;
+		height: 180px;
+		position:relative;
+		margin-bottom:20px;
+	}
+	.photo img{
+		width: 100%;
+		height: 100%;
+	}
+	.nomphoto{
+		position: absolute;
+		top:130px;
+		color: white;
+		left:calc(50% - 50px);
+
+	}
+	.jobphoto{
+		position: absolute;
+		top:150px;
+		font-size: 12px;
+		color: white;
+		left:calc(50% - 55px);
+	}
+
 	@keyframes decalage{
 		0%{
 			left:-1462px;
