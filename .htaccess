@@ -1,0 +1,10 @@
+Options -Indexes 
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /cv/
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule  ^([a-z]{1,})\.monsite$ index.php?page=$1 [L]

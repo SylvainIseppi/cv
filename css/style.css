@@ -1,10 +1,13 @@
+/*menu */
 ul{
 	z-index: 2;
 	list-style:none;
+
 	/*display: none;*/
 }
 ul ul{
 	padding: 0;
+	z-index: 50;
 }
 
 ul ul li a{
@@ -38,12 +41,208 @@ body{
 }
 .menu-mobile{
 	display: inline-block;
+	z-index: 50;
 }
 .menu-mobile .fa{
 	font-size: 45px;
 }
 
+/*cv */
+p{
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+.contentcv{
+	min-width:320px;
+	max-width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+}
+.presentation{
+	background-color:#5DA4DA;
+	color:white;
+	box-shadow:0px 4px 5px grey;
+}
+.presentation .photo{
+	
+	position:relative;
+	margin-bottom:20px;
+	
+}
+.presentation .menu{
+	background-color:#5DA4DA;
+	position:absolute;
+	top:20px;
+	left:30px;
+	width:35px;
+	height:30px;
+	font-size:20px;
+	text-align:center;
+}
+.presentation .menu .fa{
+	line-height:30px;
+}
+.presentation img{
+	height:130px;
+	width:100%;
+}
+.presentation .nomphoto{
+	position:absolute;
+	width:140px;
+	left:50%;
+	font-weight:bold;
+	margin-left:-70px;
+	bottom:60px;
+	color:white;
+}
+.presentation .jobphoto{
+	position:absolute;
+	width:140px;
+	left:50%;
+	margin-left:-70px;
+	bottom:20px;
+	color:white;
+}
+.presentation .description{
+	font-size:14px;
+	padding-left:20px;
 
+}
+.presentation .fa{
+	font-size:24px;
+	padding-left:20px;
+}
+
+.presentation .text{
+	padding-left:20px;
+}
+.presentation .not.fa{
+	padding-left:0;
+}
+
+.presentation .text p:first-line{
+	font-weight:bold;	
+}
+.experience{
+	width:100%;
+	margin-bottom:15px;
+}
+.textexperience{
+	margin-top:35px;
+}
+.experience .aquise{
+	position:absolute;
+	top:0;
+	left:0;
+	display:inline-block;
+	margin-bottom:4px;
+	width:75%;
+	height:2px;
+	background-color:white;
+}
+.experience .pourcent{
+	position:absolute;
+	right:0;
+	top:-5px;
+	display:inline-block;
+	font-size:12px;
+}
+.experience .nonaquise{
+	position:relative;
+	display:inline-block;
+	width:100%;
+	height:2px;
+	background-color:grey;
+	margin-bottom:4px;
+}
+
+.border{
+	width:calc( 100% + 10px );
+	margin-top:35px;
+	margin-left:0px;
+	border-bottom:1px solid #4684C1;
+	margin-bottom:35px;
+}
+.margin{
+	margin-bottom:30px;
+}
+
+.une-experience .job{
+	font-weight:bold;
+	font-size:16px;
+}
+
+.une-experience .lieux {
+	font-size:14px;
+}
+.une-experience .poste{
+	margin-bottom:15px;
+}
+.une-experience .date{
+	color:#5DA4DA;
+	margin-bottom:15px;
+	font-size:12px;
+}
+.une-experience .description-poste{
+	font-size:12px;
+	margin-bottom:30px;
+}
+.une-experience .border{
+	width:100% ;
+	margin-top:30px;
+	margin-left:0px;
+	border-bottom:1px solid #BDBDBD;
+	margin-bottom:35px;
+}
+.parcour .interest{
+	color:#5DA4DA;
+	margin-bottom:40px;
+}
+.parcour .interest .fa{
+	padding:0;
+}
+.parcour .link{
+	
+	margin-bottom:38px;
+	
+}
+.parcour .link a{
+	color:#5DA4DA;
+}
+
+.content-parcour{
+	margin-top:25px;
+	background-color:white;
+	color:#767271;
+	box-shadow:0px 4px 5px grey;
+
+}
+.content-parcour .debut{
+	padding-top:40px;
+}
+.content-parcour .fa{
+	font-size:40px;
+	padding-left:10px;
+}
+.content-parcour .titre{
+	font-size:24px;
+	margin-bottom:30px;
+}
+
+@media screen and (min-width:40rem){ /*tablette */
+	/* cv */
+	.presentation img{
+		height:160px;
+	}
+	.presentation .description{
+			margin-top:80px;
+			
+	}
+	.row{margin-bottom:10px;}
+}
 @media screen and (min-width:64rem){
 	.menu-desk{
 		display: inline-block;
@@ -94,8 +293,8 @@ body{
 	}
 	li{
 
-	background-color: 	#AADFF6;
-}
+		background-color: 	#AADFF6;
+	}
 
 	.nav li{
 		margin-bottom: 20px;
@@ -118,10 +317,13 @@ body{
 	.content{
 		margin-left: 450px;
 		margin-top: 30px;
+		animation-name: apparition;
+	    animation-delay: 2s;
+	    animation-duration:2s;
+	    animation-fill-mode: forwards;
+	    opacity: 0;
 	}
 	.photo{
-		width: 180px;
-		height: 180px;
 		position:relative;
 		margin-bottom:20px;
 	}
@@ -164,4 +366,71 @@ body{
 		}
 
 	}
+	.content{
+		padding-left:10px;
+	}
+	.presentation img{
+		height:260px;
+
+	}
+	.presentation .nomphoto{
+		position:absolute;
+		width:140px;
+		left:50%;
+		font-weight:bold;
+		margin-left:-70px;
+		bottom:80px;
+		color:white;
+	}
+	.presentation .jobphoto{
+		position:absolute;
+		width:140px;
+		left:50%;
+		margin-left:-70px;
+		bottom:40px;
+		color:white;
+	}
+	.presentation .description{
+			margin-top:0px;
+	}
+	.row{
+		margin-bottom:0;
+	}
+	.content-parcour{
+		margin-top:0px;
+		margin-bottom:25px;
+	}
+	/* cv */
+	.contentcv{
+		padding-left:10px;
+	}
+
+	.presentation .nomphoto{
+		position:absolute;
+		width:140px;
+		left:50%;
+		font-weight:bold;
+		margin-left:-70px;
+		bottom:80px;
+		color:white;
+	}
+	.presentation .jobphoto{
+		position:absolute;
+		width:140px;
+		left:50%;
+		margin-left:-70px;
+		bottom:40px;
+		color:white;
+	}
+	.presentation .description{
+			margin-top:0px;
+	}
+	.row{
+		margin-bottom:0;
+	}
+	.content-parcour{
+		margin-top:0px;
+		margin-bottom:25px;
+	}
+}
 }

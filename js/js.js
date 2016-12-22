@@ -15,10 +15,12 @@ $(function(){
 	for(i=0,il=ul.length;i<il;i++){
 		$(ul[i]).hide();
 	}
-	$("li").click(function(){
+	$("#burger").click(function(){
 		ul=document.getElementById("burger").getElementsByTagName("ul");
 		for(i=0,il=ul.length;i<il;i++){
-		$(ul[i]).toggle();
+		$(ul[i]).slideToggle();
 	}
 	});
 });
+
+  

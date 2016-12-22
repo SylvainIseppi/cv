@@ -1,6 +1,7 @@
 <?php
+
  if(isset($_GET['page'])){
- 	$test=$_GET["page"]."php";
+ 	$test=$_GET["page"].".php";
  	if(file_exists($test)){
  		$page=$_GET['page'];
  	}
@@ -12,7 +13,7 @@
  	$page="accueil";
  }
 include_once("header.php");
-$page =$page.".php"
+$page =$page.".php";
 
 ?>
 	<body>
@@ -21,14 +22,14 @@ $page =$page.".php"
 	?>
 	<div class="content">
 	<?php
-		require_once($page);
+		include_once($page);
 	?>
 	</div>
-		<footer>
-		
-		
-		</footer>
-		<!-- <script type="text/javascript" src="js/js.js"></script>-->
+	<footer>
+	
+	
+	</footer>
+
 	<?php
 		include_once("footer.php");
 	?>
