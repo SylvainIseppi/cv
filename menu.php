@@ -6,7 +6,7 @@
 
 			</div>
 			<ul class="nav" id="nav">
-				<li><a href="monccv.html">non assigné</a></li>
+				<li><a href="accueil.monsite">accueil</a></li>
 				<li><a href="cv.monsite">mon cv </a></li>
 				<li><a href="monccv.html">non assigné </a></li>
 				<li><a href="monccv.html">non assigné</a></li>
@@ -27,10 +27,10 @@
 			<span class="fa fa-bars"></span>
 			<ul>
 				<li>
-					<a href="index.php?page=cv">CV </a>
+					<a href="accueil.monsite">accueil </a>
 				</li>
 				<li>
-					<a href="index.php?page=cv">CV </a>
+					<a href="cv.monsite">CV </a>
 				</li>
 				<li>
 					<a href="index.php?page=cv">CV </a>

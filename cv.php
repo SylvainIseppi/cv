@@ -345,16 +345,16 @@
 										<div class="column small-2"></div>
 										<div class="column interest small-10">
 											<div class="row">
-												<div class="column small-3">
+												<div class="column small-6 medium-3">
 													<span class="fa fa-lock"><span> sécurité informatique</span> </span>
 												</div>
-												<div class="column small-3">
+												<div class="column small-6 medium-3">
 													<span class="fa fa-headphones"><span> musique</span> </span>
 												</div>
-												<div class="column small-3">
+												<div class="column small-6 medium-3">
 													<span class="fa fa-comment"><span> discussion</span> </span>
 												</div>
-												<div class="column small-3">
+												<div class="column small-6 medium-3">
 													<span class="fa fa-gamepad"><span> jeux vidéo</span> </span>
 												</div>
 											</div>
