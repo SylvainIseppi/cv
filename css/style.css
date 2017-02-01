@@ -36,6 +36,22 @@ body{
 	margin:0;
 	font-family: arial;
 }
+.contact input{
+	display: block;
+	margin-bottom: 10px;
+	width: 320px;
+}
+.contact textarea{
+	min-height: 150px;
+	min-width: 320px;
+	display: block;
+}
+.contact button{
+	width: 320px;
+	height: 30px;
+	background: #62C0E9;
+	border:none;
+}
 .menu-desk{
 		display: none;
 }

@@ -1,38 +1,23 @@
 <?php
-
- if(isset($_GET['page'])){
- 	$test=$_GET["page"].".php";
+if(isset($_GET['page'])){
+ 	$test='view/'.$_GET["page"].".php";
  	if(file_exists($test)){
- 		$page=$_GET['page'];
+ 		$page="view/".$_GET['page'];
+ 		$title=$_GET['page'];
  	}
  	else{
- 		$page="accueil";
+ 		$page="view/accueil";
  	}
  }
- else{
- 	$page="accueil";
+ elseif(isset($_GET['controlleur'])){
+ 	$page="controlleur/".$_GET["controlleur"];
+ 	$title=$_GET['controlleur'];
  }
-include_once("header.php");
-$page =$page.".php";
-
+ else{
+ 	$page="view/accueil";
+ }
+include_once("view/header.php");
+include_once("view/menu.php");
+include_once($page.'.php');
+include_once("view/footer.php");
 ?>
-	<body>
-	<?php
-	include_once("menu.php");
-	?>
-	<div class="content">
-	<?php
-		include_once($page);
-	?>
-	</div>
-	<footer>
-	
-	
-	</footer>
-
-	<?php
-		include_once("footer.php");
-	?>
-	</body>
-	
-</html>

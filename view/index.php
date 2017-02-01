@@ -1,0 +1,18 @@
+<?php
+if(isset($_GET['page'])){
+ 	$test=$_GET["page"].".php";
+ 	if(file_exists($test)){
+ 		$page=$_GET['page'];
+ 	}
+ 	else{
+ 		$page="accueil";
+ 	}
+ }
+ else{
+ 	$page="accueil";
+ }
+include_once("header.php");
+include_once("menu.php");
+include_once($page.'.php');
+include_once("footer.php");
+?>

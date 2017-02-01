@@ -1,3 +1,4 @@
+ErrorDocument 404 /cv/view/404.php 
 Options -Indexes 
 Options +FollowSymLinks
 RewriteEngine On
@@ -8,3 +9,5 @@ RewriteBase /cv/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule  ^([a-z]{1,})\.monsite$ index.php?page=$1 [L]
+RewriteRule  ^([a-z]{1,})\.control$ index.php?controlleur=$1 [L]
+
