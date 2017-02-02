@@ -7,6 +7,7 @@ if(isset($_GET['page'])){
  	}
  	else{
  		$page="view/accueil";
+ 		$title="accueil";
  	}
  }
  elseif(isset($_GET['controlleur'])){
@@ -15,6 +16,7 @@ if(isset($_GET['page'])){
  }
  else{
  	$page="view/accueil";
+ 	$title="accueil";
  }
 include_once("view/header.php");
 include_once("view/menu.php");

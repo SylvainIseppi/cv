@@ -13,7 +13,7 @@
 	$headers[] = 'Content-Transfer-Encoding: 8bit';
 	//mail('sylvain.iseppi@gmail.com','test envoie mail',' je devais tester l\'envoie du mail par la fonction mail',$headers);
 	if(mail('sylvain.iseppi@gmail.com', $object, $contenu."\n", implode("\n", $headers)."\r\n\n")){
-		echo "ok";
+		header('Location: confirmmail.monsite');
 	}
 
 ?>
