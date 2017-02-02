@@ -33,7 +33,7 @@
 					<a href="cv.monsite">CV </a>
 				</li>
 				<li>
-					<a href="index.php?page=cv">Contact </a>
+					<a href="contact.monsite">Contact </a>
 				</li>
 			</ul>
 		</li>
