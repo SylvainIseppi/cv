@@ -1,3 +1,4 @@
+<!--footer avec injection Jquery pour le menu mobile et fermeture des balise body/html -->
 </div>
 <footer>
 

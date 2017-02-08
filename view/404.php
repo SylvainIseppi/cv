@@ -1,3 +1,4 @@
+<!-- Personalisation de la page 404 -->
 <!DOCTYPE html>
 <html>
 <head>

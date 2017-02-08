@@ -1,3 +1,4 @@
+<!-- formulaire pour l'envoie de mail qui appel le controleur verif mail-->
 <div class="contact">
 <h3> Contact</h3>
 <form action="contact.control" method="POST">

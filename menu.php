@@ -2,23 +2,15 @@
 	<div class="header">
 		<div class="wrapper">
 			<div class="identite">
-				
-
 			</div>
 			<ul class="nav" id="nav">
 				<li><a href="accueil.monsite">accueil</a></li>
 				<li><a href="cv.monsite">mon cv </a></li>
 				<li><a href="contact.monsite">contact </a></li>
-				<li><a href="monccv.html">non assigné</a></li>
-				<li><a href="monccv.html">non assigné</a></li>
-				<li><a href="monccv.html">non assigné</a></li>
-				<li><a href="monccv.html">non assigné</a></li>
 			</ul>
-		</div>
-					
+		</div>	
 		<div class="biais">
 		</div>
-
 	</div>
 </div>
 <div class="menu-mobile">

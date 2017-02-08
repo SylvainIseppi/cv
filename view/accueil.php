@@ -1,11 +1,13 @@
+<!-- définit la taille de la div-->
 <div class="accueil">
-
+<!-- centre le titre et le sous titre-->
 	<div class="titre">
 			Sylvain Iseppi
 	</div>
 	<div class="soustitre">
 		Developpeur Full Stack
 	</div>
+	<!-- le text -->
 	<p>
 	Je suis un jeune développeur Full-Stack passionné par le développement web. Ayant obtenu un BTS SIO je me suis inscrit a une session de formation développeur Full-stack chez M2IFormation afin de mieux cerner tous les aspects d'une application web et de me perfectionner dans le développement web. 
 	</p>
